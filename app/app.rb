@@ -42,6 +42,9 @@ module PadrinoMyTempl
     # disable :flash                # Disables sinatra-flash (enabled by default if Sinatra::Flash is defined)
     # layout  :my_layout            # Layout can be in views/layouts/foo.ext or views/foo.ext (default :application)
     #
+    set :css_asset_folder, 'css'
+    set :js_asset_folder, 'js'
+
 
     ##
     # You can configure for a specified environment like:

@@ -1,3 +1,5 @@
+require 'bootstrap-sass'
+
 module ScssInitializer
   def self.registered(app)
     # Enables support for SCSS template reloading in rack applications.
@@ -5,6 +7,7 @@ module ScssInitializer
     # Store SCSS files (by default) within 'app/stylesheets'.
     require 'sass/plugin/rack'
     Sass::Plugin.options[:syntax] = :scss
+    Sass::Plugin.options[:style] = :compressed
     Sass::Plugin.options[:template_location] = Padrino.root("app/stylesheets")
     Sass::Plugin.options[:css_location] = Padrino.root("public/stylesheets")
     app.use Sass::Plugin::Rack
