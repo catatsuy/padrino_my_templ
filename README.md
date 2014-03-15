@@ -37,7 +37,7 @@ mysql:
 
 padrino:
 
-    bundle install --path=vendor/bundle
+    bundle install --path=vendor/gems
     # rackup
     bundle exec padrino s --host=0.0.0.0 --port=3000 -e development
     # seed
