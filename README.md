@@ -26,6 +26,11 @@ Debian:
     sudo aptitude install -y mysql-server libmysqlclient-dev
 
 
+### Mac
+
+cf: [--datadir=/usr/local/var/mysql --tmpdir=/tmp](http://tukaikta.blog135.fc2.com/blog-entry-197.html)
+
+
 ## Develop
 
 mysql:
